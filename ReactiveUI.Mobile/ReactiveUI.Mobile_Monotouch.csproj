@@ -34,31 +34,37 @@
     <DefineConstants>MONO; UIKIT</DefineConstants>
     <DocumentationFile>bin\Release\Monotouch\ReactiveUI.Mobile.XML</DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
-    <GenerateDocumentation>true</GenerateDocumentation>
+    <GenerateDocumentation>True</GenerateDocumentation>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\ext\monodroid\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\MapApp\StYetAnother\StYetAnother\Components\json.net-4.5.11\lib\ios\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="System.Reactive.Core">
-      <HintPath>..\ext\ios\System.Reactive.Core.dll</HintPath>
+      <HintPath>..\..\MapApp\StYetAnother\StYetAnother\Components\rxforxamarin-2.1\lib\ios\System.Reactive.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Interfaces">
-      <HintPath>..\ext\ios\System.Reactive.Interfaces.dll</HintPath>
+      <HintPath>..\..\MapApp\StYetAnother\StYetAnother\Components\rxforxamarin-2.1\lib\ios\System.Reactive.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Linq">
-      <HintPath>..\ext\ios\System.Reactive.Linq.dll</HintPath>
+      <HintPath>..\..\MapApp\StYetAnother\StYetAnother\Components\rxforxamarin-2.1\lib\ios\System.Reactive.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.PlatformServices">
-      <HintPath>..\ext\ios\System.Reactive.PlatformServices.dll</HintPath>
+      <HintPath>..\..\MapApp\StYetAnother\StYetAnother\Components\rxforxamarin-2.1\lib\ios\System.Reactive.PlatformServices.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="Xamarin.Mobile">
-      <HintPath>..\ext\ios\Xamarin.Mobile.dll</HintPath>
+      <HintPath>..\..\MapApp\StYetAnother\StYetAnother\Components\xamarin.mobile-0.7.1\lib\ios\Xamarin.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Debugger">
+      <HintPath>..\..\MapApp\StYetAnother\StYetAnother\Components\rxforxamarin-2.1\lib\ios\System.Reactive.Debugger.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Experimental">
+      <HintPath>..\..\MapApp\StYetAnother\StYetAnother\Components\rxforxamarin-2.1\lib\ios\System.Reactive.Experimental.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -88,4 +94,21 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <ItemGroup>
+    <XamarinComponentReference Include="rxforxamarin">
+      <InstallationInProgress>True</InstallationInProgress>
+      <Version>2.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamarin.mobile">
+      <InstallationInProgress>True</InstallationInProgress>
+      <Version>0.7.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="json.net">
+      <InstallationInProgress>True</InstallationInProgress>
+      <Version>4.5.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
 </Project>

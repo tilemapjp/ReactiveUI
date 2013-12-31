@@ -11,7 +11,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using ActionbarSherlock.App;
+//using ActionbarSherlock.App;
 
 namespace ReactiveUI.Android
 {
